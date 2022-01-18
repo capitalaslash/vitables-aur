@@ -1,0 +1,21 @@
+diff -u -u -r ViTables-3.0.2_orig/vitables/utils.py ViTables-3.0.2/vitables/utils.py
+--- ViTables-3.0.2_orig/vitables/utils.py	2022-01-18 17:57:32.846589608 +0100
++++ ViTables-3.0.2/vitables/utils.py	2022-01-18 17:59:26.974479154 +0100
+@@ -149,7 +149,7 @@
+     :return: None
+     """
+ 
+-    if not isinstance(entries, collections.Iterable):
++    if not isinstance(entries, collections.abc.Iterable):
+         entries = [entries]
+ 
+     if isinstance(entries[0], QtWidgets.QAction):
+@@ -177,7 +177,7 @@
+     :return: None
+     """
+ 
+-    if not isinstance(entries, collections.Iterable):
++    if not isinstance(entries, collections.abc.Iterable):
+         entries = [entries]
+ 
+     if isinstance(entries[0], QtWidgets.QAction):
